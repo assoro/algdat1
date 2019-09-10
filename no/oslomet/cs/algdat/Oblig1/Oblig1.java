@@ -25,7 +25,7 @@ public class Oblig1 {
     public static int antallUlikeSortert(int[] a) {
         throw new NotImplementedException();
     }
-
+    //test
 
     ///// Oppgave 3 //////////////////////////////////////
     public static int antallUlikeUsortert(int[] a) {
