@@ -6,6 +6,7 @@ Oppgaven er levert av følgende studenter:
 * Poorani Nagendran s331411, s331411@oslomet.no
 * Rahujan Ravindran s331399, s331399@oslomet.no
 * Asso Rostampoor s330533, s330533@oslomet.no
+* Mohammad Awais Hameed, s331375, s331375@oslomet.no
 
 # Arbeidsfordeling
 
