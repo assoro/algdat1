@@ -13,7 +13,7 @@ public class Oblig1 {
     }
 
     ///// Oppgave 1 //////////////////////////////////////
-    public static int maks(int[] a) {
+    public static int maks(int[] a) throws NotImplementedException {
         throw new NotImplementedException();
     }
 
@@ -50,7 +50,16 @@ public class Oblig1 {
     ///// Oppgave 7 //////////////////////////////////////
     /// 7a)
     public static String flett(String s, String t) {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
+
+        //her konvereter vi strings til array
+        //lengden på arrayet vil være like langt som lengden på stringen
+        char[] a1 = s.toCharArray();
+        char[] a2 = t.toCharArray();
+
+        char[] flettetStrings = new char[a1.length + a2.length];
+
+        return String.valueOf(flettetStrings);
     }
 
     /// 7b)
