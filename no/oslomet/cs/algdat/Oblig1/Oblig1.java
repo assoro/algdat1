@@ -64,6 +64,13 @@ public class Oblig1 {
         //Math.min returnerer den minste verdiene
         int b = Math.min(a1.length, a2.length);
 
+        //for løkke for annen hver
+        for (int i = 0, j = 0; i < b; i++) {
+            flettetStrings[j++] = a1[i];
+            flettetStrings[j++] = a2[i];
+
+        }
+
         return String.valueOf(flettetStrings);
     }
 
