@@ -1,4 +1,4 @@
-package no.oslomet.cs.algdat.Oblig1;
+package algdat.Oblig1;
 
 ////// Løsningsforslag Oblig 1 - 2019 ////////////////////////
 
@@ -61,16 +61,26 @@ public class Oblig1 {
         //i et nytt array, altså nytt objekt
         char[] flettetStrings = new char[a1.length + a2.length];
 
-        //Math.min returnerer den minste verdiene
+        //Math.min returnerer den minste verdien
         int b = Math.min(a1.length, a2.length);
 
         //for løkke for annen hver
         for (int i = 0, j = 0; i < b; i++) {
             flettetStrings[j++] = a1[i];
             flettetStrings[j++] = a2[i];
-
         }
 
+        //arraycopy(metode med parametre) kopierer arrays fra en spesifik posisjon til gitt array
+        // 1) fra arrayet som skal kopieres fra
+        // 2) start posisjon til arrayet det skal kopieres fra
+        // 3) arrayet det skal kopieres til
+        // 4) start posisjon i arrayet kopiert til
+        // 5) total antall komponenter som skal kopieres
+        System.arraycopy(a1, b, flettetStrings, 2*b, a1.length -1);
+        System.arraycopy(a2, b, flettetStrings, 2*b, a2.length -1);
+
+        //Gjør om char arrayet flettetStrings til en string. ValueOf() metode som lar oss konvertere
+        //til de fleste typer av string.
         return String.valueOf(flettetStrings);
     }
 
