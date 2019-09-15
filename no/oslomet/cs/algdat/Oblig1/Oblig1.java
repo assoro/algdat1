@@ -57,7 +57,12 @@ public class Oblig1 {
         char[] a1 = s.toCharArray();
         char[] a2 = t.toCharArray();
 
+        //her fletter vi arrayene sammen vet å legge de inn
+        //i et nytt array, altså nytt objekt
         char[] flettetStrings = new char[a1.length + a2.length];
+
+        //Math.min returnerer den minste verdiene
+        int b = Math.min(a1.length, a2.length);
 
         return String.valueOf(flettetStrings);
     }
