@@ -14,7 +14,22 @@ public class Oblig1 {
 
     ///// Oppgave 1 //////////////////////////////////////
     public static int maks(int[] a) {
-        throw new NotImplementedException();
+        if (a.length < 1)
+throw new java.util.NoSuchElementException("Tabellen a er tom!");
+
+int m = 0; // hjelpeverdi til å sammenligne med
+
+for (int i=1;i<a.length;i++)
+{
+
+ 
+if (a[m] > a[i]) 
+bytt(a,i,m); // Tallene bytter plass
+    
+m++;
+    }
+    
+ return a[a.length-1]; // returnerer den bakerste verdien
     }
 
     public static int ombyttinger(int[] a) {
